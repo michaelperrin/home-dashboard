@@ -1,0 +1,48 @@
+import React, { Component } from 'react';
+import Api from './Api';
+
+export default class Velib extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      availableBikes: 0,
+      availableBikeStands: 0,
+      isOpen: true
+    };
+
+    this.refresh = this.refresh.bind(this);
+  }
+
+  componentDidMount() {
+    this.refresh();
+  }
+
+  refresh() {
+    Api.getStationInfo(
+      this.props.apiKey,
+      this.props.contract,
+      this.props.stationId
+    ).then((stationInfo) => {
+      this.setState({
+        availableBikes: stationInfo.available_bikes,
+        availableBikeStands: stationInfo.available_bike_stands,
+        isOpen: stationInfo.status === 'OPEN'
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div className="Velib">
+        Vélos disponibles: {this.state.availableBikes}
+      </div>
+    );
+  }
+}
+
+Velib.propTypes = {
+  apiKey: React.PropTypes.string.isRequired,
+  stationId: React.PropTypes.number.isRequired,
+  contract: React.PropTypes.string.isRequired
+};
