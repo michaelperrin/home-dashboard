@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 import 'moment/locale/fr';
 
@@ -20,7 +21,7 @@ export default class DateTest extends Component {
 }
 
 DateTest.propTypes = {
-  year: React.PropTypes.number.isRequired,
-  month: React.PropTypes.number.isRequired,
-  date: React.PropTypes.number.isRequired
+  year: PropTypes.number.isRequired,
+  month: PropTypes.number.isRequired,
+  date: PropTypes.number.isRequired
 };

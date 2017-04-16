@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Api from './Api';
 
 export default class Velib extends Component {
@@ -42,7 +43,7 @@ export default class Velib extends Component {
 }
 
 Velib.propTypes = {
-  apiKey: React.PropTypes.string.isRequired,
-  stationId: React.PropTypes.number.isRequired,
-  contract: React.PropTypes.string.isRequired
+  apiKey: PropTypes.string.isRequired,
+  stationId: PropTypes.number.isRequired,
+  contract: PropTypes.string.isRequired
 };

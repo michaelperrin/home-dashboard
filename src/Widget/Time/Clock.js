@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Clock extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class Clock extends Component {
 }
 
 Clock.propTypes = {
-  hours: React.PropTypes.number.isRequired,
-  minutes: React.PropTypes.number.isRequired,
-  seconds: React.PropTypes.number.isRequired
+  hours: PropTypes.number.isRequired,
+  minutes: PropTypes.number.isRequired,
+  seconds: PropTypes.number.isRequired
 };
