@@ -21,7 +21,6 @@ export default class Velib extends Component {
 
   refresh() {
     Api.getStationInfo(
-      this.props.apiKey,
       this.props.contract,
       this.props.stationId
     ).then((stationInfo) => {
@@ -43,7 +42,6 @@ export default class Velib extends Component {
 }
 
 Velib.propTypes = {
-  apiKey: PropTypes.string.isRequired,
   stationId: PropTypes.number.isRequired,
   contract: PropTypes.string.isRequired
 };
