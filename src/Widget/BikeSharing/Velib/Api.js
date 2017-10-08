@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 
 export default class Api {
   static getStationInfo(apiKey, contract, stationId) {
-    return fetch(`https://api.jcdecaux.com/vls/v1/stations/${stationId}?contract=${contract}&apiKey=${apiKey}`)
+    return fetch(`${process.env.REACT_APP_API_HOST}/bike-sharing/velib/station-info?contract=${contract}&id=${stationId}`)
       .then(function(response) {
         return response.json();
       })
