@@ -27,7 +27,7 @@ export default class Velib extends Component {
       this.setState({
         availableBikes: stationInfo.available_bikes,
         availableBikeStands: stationInfo.available_bike_stands,
-        isOpen: stationInfo.status === 'OPEN'
+        isOpen: stationInfo.status
       });
     });
   }
