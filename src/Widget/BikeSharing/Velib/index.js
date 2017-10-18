@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Api from './Api';
+import Gauge from '../../../Chart/Gauge';
 
 export default class Velib extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ export default class Velib extends Component {
     ).then((stationInfo) => {
       this.setState({
         availableBikes: stationInfo.available_bikes,
-        availableBikeStands: stationInfo.available_bike_stands,
+        availableBikeStands: stationInfo.available_stands,
         isOpen: stationInfo.status
       });
     });
@@ -35,7 +36,7 @@ export default class Velib extends Component {
   render() {
     return (
       <div className="Velib">
-        Vélos disponibles: {this.state.availableBikes}
+        <Gauge value={this.state.availableBikes} min={0} max={this.state.availableBikeStands} title="" label="connections" />
       </div>
     );
   }
