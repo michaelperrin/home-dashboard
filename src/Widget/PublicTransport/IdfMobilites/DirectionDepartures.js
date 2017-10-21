@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import Api from './Api';
 import DepartureTimes from './DepartureTimes';
 import Station from './Station';
-import './idf-mobilites.css';
 
-export default class IdfMobilites extends Component {
+export default class DirectionDepartures extends Component {
   constructor(props) {
     super(props);
 
@@ -49,7 +48,7 @@ export default class IdfMobilites extends Component {
   }
 }
 
-IdfMobilites.propTypes = {
+DirectionDepartures.propTypes = {
   lineId: PropTypes.string.isRequired,
   stopId: PropTypes.string.isRequired,
   direction: PropTypes.number.isRequired

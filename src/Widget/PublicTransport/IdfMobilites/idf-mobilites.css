@@ -1,0 +1,36 @@
+.idf-mobilites {
+  border: 1px solid #f7f7f8;
+}
+
+.idf-mobilites .station {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px;
+}
+
+.idf-mobilites .departures {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.idf-mobilites .departures li {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 24px;
+  padding-right: 1rem;
+}
+
+.idf-mobilites .departures li abbr {
+  font-size: 12px;
+  padding-left: 0.2rem;
+}
+
+.idf-mobilites .direction {
+  font-size: 15px;
+  font-weight: 300;
+  color: #606060;
+}
