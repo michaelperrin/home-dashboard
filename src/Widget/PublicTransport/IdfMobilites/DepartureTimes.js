@@ -7,7 +7,7 @@ export default class DepartureTimes extends Component {
       <ul className="departures">
         {this.props.times.map((time) => {
           return (
-            <li>
+            <li key={time.toString()}>
               {time}
               <abbr>min</abbr>
             </li>

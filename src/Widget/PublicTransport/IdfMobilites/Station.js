@@ -20,5 +20,6 @@ export default class Station extends Component {
 
 Station.propTypes = {
   name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   direction: PropTypes.string
 };
