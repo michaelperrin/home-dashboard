@@ -17,6 +17,12 @@ export default class StationDepartures extends Component {
 
   componentDidMount() {
     this.refresh();
+
+    document.addEventListener('visibilitychange', this.refresh);
+
+    setInterval(() => {
+      this.refresh();
+    }, 30000);
   }
 
   refresh() {
@@ -27,6 +33,8 @@ export default class StationDepartures extends Component {
       this.setState({
         nextDepartures: nextDeparturesData.next_departures
       });
+    }).catch((error) => {
+      console.log('error');
     });
   }
 
