@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="36px" viewBox="0 0 33 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Mix Rainfall Night Icon Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS-9.3-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Weather-Icons" transform="translate(-691.000000, -509.000000)">
+            <g id="Mix-Rainfall-Night-Icon-Group" transform="translate(680.000000, 499.000000)">
+                <rect id="Weather-Icon-Frame" fill="#161A2E" opacity="0" x="0" y="0" width="56" height="56"></rect>
+                <g id="Mix-Rainfall-Night-Icon" transform="translate(11.000000, 10.000000)">
+                    <polygon id="Shape" fill="#FFFFFF" points="13 12 20 12 18.5 18 22 18 13.25 33 14 23 10.5 23"></polygon>
+                    <path d="M25,7 C24.7,7 24.405,7.02 24.113,7.052 C22.942,2.981 19.197,0 14.75,0 C9.365,0 5,4.365 5,9.75 C5,10.2 5.041,10.641 5.101,11.074 C2.215,11.51 0,13.993 0,17 C0,20.313 2.687,23 6,23 L8.449,23 L8.55,22.557 L11.05,11.557 L11.404,10 L13.001,10 L20.001,10 L22.563,10 L21.942,12.485 L21.063,16 L22.001,16 L25.483,16 L23.728,19.008 L21.399,23 L25.001,23 C29.419,23 33.001,19.418 33.001,15 C33.001,10.582 29.418,7 25,7 L25,7 Z" id="Shape" fill="#FFFFFF" opacity="0.5"></path>
+                    <path d="M1.307798,28.2846864 L4.540698,23.8351864 L5.956448,24.8638364 L2.723548,29.3133364 L1.307798,28.2846864 Z M6.5395658,33.862144 L10.0675658,29.008744 L11.4831408,30.037744 L7.9551408,34.891144 L6.5395658,33.862144 Z M18.0573235,34.487297 L23.717786,26.702597 L25.1323772,27.7311839 L19.4719147,35.5158839 L18.0573235,34.487297 Z M24.6231818,30.8551762 L27.8560818,26.4056762 L29.2718318,27.4343262 L26.0389318,31.8838262 L24.6231818,30.8551762 Z" id="Rectangle-path" fill="#5AC8FA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="36px" viewBox="0 0 33 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Heavy Rain Night Icon Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS-9.3-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Weather-Icons" transform="translate(-691.000000, -44.000000)">
+            <g id="Heavy-Rain-Night-Icon-Group" transform="translate(680.000000, 34.000000)">
+                <rect id="Weather-Icon-Frame" fill="#161A2E" opacity="0" x="0" y="0" width="56" height="56"></rect>
+                <g id="Heavy-Rain-Night-Icon" transform="translate(11.000000, 10.000000)">
+                    <path d="M25,7 C24.7,7 24.405,7.02 24.113,7.052 C22.942,2.981 19.197,0 14.75,0 C9.365,0 5,4.365 5,9.75 C5,10.2 5.041,10.641 5.101,11.074 C2.215,11.51 0,13.993 0,17 C0,20.313 2.687,23 6,23 L25,23 C29.418,23 33,19.418 33,15 C33,10.582 29.418,7 25,7 L25,7 Z" id="Shape" fill="#FFFFFF" opacity="0.5"></path>
+                    <path d="M1.690567,31.0578726 L5.731692,25.4959976 L7.146633,26.5240598 L3.105508,32.0859348 L1.690567,31.0578726 Z M22.7165698,31.0399826 L26.7576948,25.4781076 L28.1734448,26.5067576 L24.1323198,32.0686326 L22.7165698,31.0399826 Z M4.9578818,33.6147438 L11.1297818,25.1202438 L12.5455318,26.1488938 L6.3736318,34.6433938 L4.9578818,33.6147438 Z M11.2626006,32.7368378 L16.5528006,25.4558378 L17.9685506,26.4844878 L12.6783506,33.7654878 L11.2626006,32.7368378 Z M15.8074946,34.3082178 L22.1263446,25.6114678 L23.5420946,26.6401178 L17.2232446,35.3368678 L15.8074946,34.3082178 Z" id="Rectangle-path" fill="#5AC8FA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
