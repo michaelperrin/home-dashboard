@@ -25,17 +25,19 @@ export default class StationDepartures extends Component {
     }, 30000);
   }
 
-  refresh() {
-    Api.getNextDeparturesForStation(
-      this.props.lineId,
-      this.props.stopId
-    ).then((nextDeparturesData) => {
+  async refresh() {
+    try {
+      const nextDeparturesData = await Api.getNextDeparturesForStation(
+        this.props.lineId,
+        this.props.stopId
+      );
+
       this.setState({
         nextDepartures: nextDeparturesData.next_departures
       });
-    }).catch((error) => {
-      console.log('error');
-    });
+    } catch (error) {
+      console.log('Error while retrieving next departures');
+    }
   }
 
   render() {
@@ -55,14 +57,17 @@ export default class StationDepartures extends Component {
           </thead>
           <tbody>
             {this.state.nextDepartures.map((directionDepartures) => {
-              let times = directionDepartures.times.slice(0, this.props.maxItems);
-
               return (
                 <tr key={directionDepartures.direction}>
                   <td />
                   <td className="direction">{directionDepartures.direction}</td>
                   <td style={{'textAlign': 'right'}}>
-                    <DepartureTimes times={times} />
+                    <DepartureTimes
+                      times={directionDepartures.times}
+                      minTime={this.props.minTime}
+                      maxTime={this.props.maxTime}
+                      maxItems={this.props.maxItems}
+                    />
                   </td>
                 </tr>
               );
@@ -80,7 +85,9 @@ StationDepartures.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   line: PropTypes.string.isRequired,
-  maxItems: PropTypes.number
+  maxItems: PropTypes.number,
+  minTime: PropTypes.number,
+  maxTime: PropTypes.number
 };
 
 StationDepartures.defaultValues = {

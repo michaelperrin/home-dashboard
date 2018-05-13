@@ -31,6 +31,7 @@ export default class App extends Component {
                 type="bus"
                 lineId="100100144:144"
                 stopId="stopPoint:59:4024342"
+                maxTime={60}
               />
 
               <StationDepartures
@@ -39,6 +40,7 @@ export default class App extends Component {
                 type="bus"
                 lineId="100100093:93"
                 stopId="stopPoint:59:4024342"
+                maxTime={60}
               />
 
               <StationDepartures
@@ -48,6 +50,8 @@ export default class App extends Component {
                 lineId="100112012:T2"
                 stopId="stopPoint:59029"
                 maxItems={3}
+                minTime={4}
+                maxTime={60}
               />
 
               <StationDepartures
@@ -57,6 +61,8 @@ export default class App extends Component {
                 lineId="800:L"
                 stopId="stopPoint:8738238:800:L"
                 maxItems={3}
+                minTime={4}
+                maxTime={60}
               />
 
               <StationDepartures
@@ -66,6 +72,8 @@ export default class App extends Component {
                 lineId="800:U"
                 stopId="stopPoint:8738238:800:U"
                 maxItems={3}
+                minTime={4}
+                maxTime={60}
               />
             </div>
           </div>
