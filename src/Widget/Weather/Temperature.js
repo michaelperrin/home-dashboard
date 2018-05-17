@@ -3,14 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class Temperature extends Component {
   getDisplayedTemperature() {
-    let temperature = this.props.celsiusDegrees;
-    temperature = this.convertToHalfDegrees(temperature);
-
-    return `${temperature}°`;
-  }
-
-  convertToHalfDegrees(temperature) {
-    return Math.round(temperature * 2) / 2;
+    return `${this.props.celsiusDegrees}°`;
   }
 
   render() {
