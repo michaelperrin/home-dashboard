@@ -46,18 +46,19 @@ export default class CalendarMonth extends Component {
    * @return {Array}
    */
   getWeekRows() {
-    let firstDay = this.getFirstDay(this.props.year, this.props.month);
+    let firstDay = this.getFirstDay(this.props.year, this.props.month)
 
     let weekRows = [];
     let weekRow = [];
 
     let nbEmpty = this.convertWeekDay(firstDay, this.props.firstDayOfWeek);
     let firstDayInCalendar = new Date(this.props.year, this.props.month, 1 - nbEmpty);
+    let firstDateOfMonthTime = new Date(this.props.year, this.props.month, 1).getTime();
 
     let i = 0;
     let currentDate = firstDayInCalendar;
 
-    while (currentDate.getMonth() <= this.props.month || i % 7 !== 0) {
+    while (currentDate.getTime() <= firstDateOfMonthTime || currentDate.getMonth() <= this.props.month || i % 7 !== 0) {
       weekRow.push(new Date(currentDate.getTime()));
 
       if (weekRow.length === 7) {
